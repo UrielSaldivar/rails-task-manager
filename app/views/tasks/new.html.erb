@@ -1,0 +1,13 @@
+<h1>New task</h1>
+
+<form action="/tasks" method="post">
+  <label>Title</label>
+  <input type="text" name="task[title]">
+
+  <label>Details</label>
+  <input type="text" name="task[details]">
+
+  <input type="submit" value="Create task">
+</form>
+
+<%= link_to "Back to list", tasks_path %>
